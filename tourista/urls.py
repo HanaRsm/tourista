@@ -29,6 +29,7 @@ urlpatterns = [
     path('destinations/create/',views.destination_create ,name='destination-create'),
     path('destinations/update/<int:destination_id>/',views.destination_update ,name='destination-update'),
     path('destinations/delete/<int:destination_id>/',views.destination_delete ,name='destination-delete'),
+    
 ]
 
 if settings.DEBUG:
