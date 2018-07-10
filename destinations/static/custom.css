@@ -1,15 +1,17 @@
 
 
 body {
-	background-color: blue;
+	background-color: grey;
 }
 
 h1 {
-	color: yellow;
+	color: white;
 	margin-left: 20px;
+	 
 }
 
 p {
-	color: red;
+	color: blue;
 	margin-top: 20px;
 }
+

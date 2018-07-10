@@ -3,15 +3,19 @@
 {% block title %}Detail{% endblock title %} 
 
 {% block content %}
+
+
+<div class="row">
 <div class="media">
     <div class="media-body">
-    <h1>
+    <h1 class="card-title"><br>
     {{destination.name}}</h1>
     <p>{{destination.description}}</p>
     <p>{{destination.activities}}</p>
     </div>
     <br>
-    <p><img class="align-self-center mr-3" src="{{destination.pretty_picture.url}}"></p>
+    <p class="rounded" style="align-content: center;">
+        <img  class="align-self-center mr-3" src="{{destination.pretty_picture.url}}"></p>
     <p>{{destination.optimal_visiting_season}}</p>
     <a href="{% url 'destination-update' destination.id %}">
         
@@ -22,5 +26,6 @@
         <button type="button" class="btn btn-success">Delete</button>
 
     </a>
+</div>
 </div>
 {% endblock content %}
